@@ -1,12 +1,15 @@
 # crawler
 
-# This is very quick and simple attempt at crawling through website
+# This is very quick and simple attempt at crawling through website.
 # Since I had a very limited time (about 1h) I decided to abandon attempt to create a proper map of links
 # in favour of just geting list of links. As well, I had no time to create proper testing environment
 # with number of redirects, dead links or links to other websites.
 #
 # Alternative solution could be to use curl and scan content for <a href="regex_for_URL">
 #  (or write something in proper scripting language)
+#
+# Obvious limitation of this script (and using wget) is that it is a single threaded operation, can take
+# a long time to process a bigger site.
 #
 # Script relies on wget, curl and dig - I could implement proper 'discovery' or local packet management
 # system (rpm, apt, emerge, ...) and use that to verify existence and locations.
